@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+p {
+    font-size: 18px;
+    color: #666;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#flores.hidden {
+    display: none; /* Oculta el contenedor de flores inicialmente */
+}
+
+.flower {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.petal {
+    width: 100px;
+    height: 50px;
+    background-color: #ff5252; /* Color de los pétalos */
+    border-radius: 50px 50px 0 0;
+    position: absolute;
+}
+
+.petal1 {
+    top: 0;
+    left: 25px;
+}
+
+.petal2 {
+    top: 25px;
+    right: 0;
+    transform: rotate(90deg);
+}
+
+.petal3 {
+    bottom: 0;
+    left: 25px;
+    transform: rotate(180deg);
+}
+
+.petal4 {
+    top: 25px;
+    left: 0;
+    transform: rotate(-90deg);
+}
+
+.center {
+    width: 50px;
+    height: 50px;
+    background-color: #ffeb3b; /* Color del centro */
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
